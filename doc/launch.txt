@@ -1,0 +1,7 @@
+cd ~/PX4-Autopilot
+make px4_sitl gazebo-classic
+cd Micro-XRCE-DDS-Agent
+MicroXRCEAgent udp4 -p 8888
+
+source /opt/ros/foxy/setup.bash
+ros2 launch urdf_tutorial display.launch.py model:=/home/fredd/ros2_ws/src/iris_description/urdf/iris.urdf
