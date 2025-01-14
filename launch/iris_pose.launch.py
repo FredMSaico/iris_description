@@ -20,10 +20,8 @@ def generate_launch_description():
         output='screen'
     )
 
-    # Configuración de RViz
-    rviz_config_path = os.path.join(iris_description_dir, 'rviz', 'iris.rviz')
+    rviz_config_path = os.path.join(iris_description_dir, 'rviz', 'iris_pose.rviz')
 
-    # Nodo para lanzar RViz con la configuración de iris.rviz
     rviz_node = Node(
         package='rviz2',
         executable='rviz2',
@@ -34,6 +32,5 @@ def generate_launch_description():
 
     return LaunchDescription([
         robot_state_publisher_node,
-
         rviz_node
     ])

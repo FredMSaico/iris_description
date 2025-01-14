@@ -6,7 +6,7 @@ package_name = 'iris_description'
 
 setup(
     name=package_name,
-    version='0.0.0',
+    version='1.0.0',
     packages=[package_name],
     data_files=[
         ('share/ament_index/resource_index/packages',
@@ -20,10 +20,10 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='fredd',
+    maintainer='Alfredo',
     maintainer_email='amamanisai@unsa.edu.pe',
-    description='Descripción del paquete iris_description',
-    license='Licencia del paquete',
+    description='Package provides a URDF model for use with ROS2',
+    license='GPL-3.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [],
