@@ -1,8 +1,6 @@
 # iris_description
 
-Theis package provides the description and configuration of the Iris drone using a URDF (Unified Robot Description Format) model. This package enables the integration of the drone in ROS 2 for visualization in RViz, trajectory tracking, sensor fusion, and navigation algorithm development.
-
-![Iris Drone Model](doc/iris_model.png)
+This package provides the description and configuration of the Iris drone using a URDF (Unified Robot Description Format) model. This package enables the integration of the drone in ROS 2 for visualization in RViz, trajectory tracking, sensor fusion, and navigation algorithm development.
 
 ---
 
@@ -27,12 +25,22 @@ colcon build --packages-select iris_description
 
 ## Execution
 
-### Load the model in simulation
-To load the Iris drone model into the simulation, use the following command:
+### Load the model with GUI
+To load the Iris drone model with jpint simulator GUI, use the following command:
 
 ```bash
-ros2 launch iris_description iris_model.launch.py
+ros2 launch iris_description iris_model_gui.launch.py
 ```
+![Iris Drone Model](doc/iris_model.png)
+
+---
+### Load the model with SITL
+To load the Iris drone model into SITL, use the following command:
+
+```bash
+ros2 launch iris_description iris_pose.launch.py
+```
+![Iris Drone Model](doc/iris_pose_sitl.png)
 
 ---
 
