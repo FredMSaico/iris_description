@@ -20,7 +20,7 @@ def generate_launch_description():
         output='screen'
     )
 
-    rviz_config_path = os.path.join(iris_description_dir, 'rviz', 'iris_pose.rviz')
+    rviz_config_path = os.path.join(iris_description_dir, 'rviz', 'iris_model.rviz')
 
     rviz_node = Node(
         package='rviz2',
